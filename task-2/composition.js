@@ -107,9 +107,6 @@ function SteeringWheel(centimeters) {
     }
 }
 
-
-
-
 let ford = new Car('ford', 'jeep', 6, 'red', 40);
 
 ford.changeBodyColor('black');
@@ -118,8 +115,8 @@ ford.changeBodyCapacity(7)
 ford.changeDisk();
 ford.changeWinterTire();
 
-
 let toyota = new Car('toyota', 'jeep', 5, 'green', 35);
+
 toyota.changeWinterTire();
 toyota.changeBodyType('sedan');
 toyota.changeDisk();
@@ -129,21 +126,11 @@ toyota.changeWinterTire();
 let cars = [ford, toyota];
 
 
-for(let i = 0; i < cars.length ; i++){
-    let out ='';
+for (let i = 0; i < cars.length; i++) {
+    let out = '';
     let obj = cars[i].getCarInfo();
-    for ( let key in obj){
+    for (let key in obj) {
         out += `${key} : ${obj[key]}, `;
     }
     console.log(out);
 }
-
-
-
-
-
-
-
-
-
-
